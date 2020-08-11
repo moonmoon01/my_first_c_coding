@@ -88,12 +88,11 @@ int main()
 
 void checkGameOver(void)
 {
-  
-   for (int j=0; j<3; j++){
-        if((gameBoard[j][0] != '_'))
+   for (int l=0; l<3; l++){
+        if((gameBoard[l][0] != '_'))
         {
-          if( (gameBoard[j][0] == gameBoard[j][1] ) && 
-                (gameBoard[j][1] == gameBoard[j][2]) )
+          if( (gameBoard[l][0] == gameBoard[l][1] ) && 
+                (gameBoard[l][1] == gameBoard[l][2]) )
             {
                 game_over = 1;
                 printf("game over");
@@ -122,4 +121,6 @@ void checkGameOver(void)
           {game_over =1;
           printf("game over");}
     }
+
+
 }
